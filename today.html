@@ -2,27 +2,62 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Сегодня</title>
-<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div>
-		text
-	</div>
-	<form>
-		<label>
-			Комментарий<textarea name="comment"></textarea>
-		</label><br>
-		<label>
-			Имя<input type="text" name="first-name">
-		</label>
-		<label>
-			Анонимно<input type="checkbox" name="anonymously">
-		</label>
-		<label>
-			Отправить<input type="submit" value="Отправить">
-		</label>
-		<input type="hidden" name="hidden-value" value="today">
-	</form>
+	<nav>
+		<a href="#">
+			<img src="images/logo-3.png" class="cat" alt="logo-cat">
+		</a>
+	</nav>
+		<div class="main">
+			<div id="today">
+				<div class="author">Марьяна Крачкова</div>
+				<div class="date">20.08.2017</div>
+				<p>
+					Главный раввин Одессы и Одесской области Шломо Бакшт — о свободном владении несколькими языками к пятому классу, раздельном обучении мальчиков и девочек, шансах на учебу за границей и бесплатном обучении в школах «Тиква».
+					Учебные заведения Тиква — это единая структура, которую начали создавать более 20 лет назад: сначала, в сентябре 1994 года, открылась средняя школа для мальчиков. Уже через год открылась школа для девочек, еще через полгода — начальная школа, еще через полгода – интернат, а через несколько лет – университет.
+					И вот сегодня только в центре города у нас есть детский сад, начальная школа, средняя школа для мальчиков, средняя школа для девочек и университет. Есть еще филиал на Таирова – там детский сад и начальная школа. У общины также есть три интерната.
+					В детских садах общины учится около 150 детей. В школе – еще несколько сотен человек. В университете – еще 100-150. В общем – около тысячи человек. За все время было уже несколько тысяч выпускников. Около тысячи сейчас живут в Израиле.
+				</p>
+				<div class="image">
+					<img src="images/Ravin.jpg">
+				</div>
+			</div>
+			<div class="forma">
+				<form>
+					<label>
+						<span class="form-content">Имя</span><br><input type="text" name="first-name" class="text-name"><br>
+					</label>
+					<label>
+						<span class="form-content">Комментарий</span><br><textarea name="comment" class="text-comment"></textarea>
+					</label>
+					<div class="form-block">
+						<label>
+							<span class="form-content">Анонимно</span><input type="checkbox" name="anonymously" class="boxing">
+						</label>
+					</div>
+					<div class="form-block">
+						<label>
+							<input type="submit" value="Отправить" class="send">
+						</label>
+					</div>
+					<input type="hidden" name="hidden-value">
+				</form>
+			</div>
+		</div>
+	<footer>
+		<a href="/">
+			<img src="images/logo-1.png" class="cat-footer">
+		</a>
+		<ul class="footer-navigation">
+			<li class="li-list">E-mail: art@gmail.com</li>
+			<li class="li-list">Tel: +380 566 25 25</li>
+			<li class="li-list">VK: ArtTerritory</li>
+		</ul>
+	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

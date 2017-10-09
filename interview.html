@@ -2,27 +2,63 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Интервью</title>
-<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div>
-		text
-	</div>
-	<form>
-		<label>
-			Комментарий<textarea name="comment"></textarea>
-		</label><br>
-		<label>
-			Имя<input type="text" name="first-name">
-		</label>
-		<label>
-			Анонимно<input type="checkbox" name="anonymously">
-		</label>
-		<label>
-			Отправить<input type="submit" value="Отправить">
-		</label>
-		<input type="hidden" name="hidden-value" value="interview">
-	</form>
+	<nav>
+		<a href="#">
+			<img src="images/logo-3.png" class="cat" alt="logo-cat">
+		</a>
+	</nav>
+		<div class="main">
+			<div id="interview">
+				<div class="author">Мария Ткач</div>
+				<div class="date">18.09.2017</div>
+				<p>
+					Записан рассказ девушки, которая живет во Вьетнамском квартале (улица Грушевского, Слободка).
+					Нынешнему Вьетнамскому кварталу восемь лет, раньше вьетнамцы жили в общежитии возле психбольницы. Долгое время новый квартал носил смешное название вроде «Вьетнамского землячества». Оно еще висело на доме, напечатанное красными буквами. Видимо, кто-то сказал, что это смешно, и вывеску сняли. Таксисты ориентируются на ресторан «Лотос». Там стоит много элитных автомобилей.
+					В квартале работает школа для вьетнамцев, которые родились в Одессе. Они учатся читать и писать по-вьетнамски. Старшая девочка Аня туда ходит, а Соня сопротивляется. Ей больше нравится ходить на английский, чем на вьетнамский. А родители, хоть и живут здесь с 16 лет, по-русски говорят плохо.
+					У вьетнамцев не принято устраивать долгие застолья и отмечать свадьбы по три дня. Большую часть гуляний устраивают в «Лотосе». Посидели два часа, быстро покушали, быстро напились — хотя много они всё равно не пьют — и разошлись.
+					Они празднуют и наш Новый год, и вьетнамский — его отмечают в феврале. В этот день запускают очень крутые фейерверки. Недавно в центре проходил фестиваль фейерверков — так вот во Вьетнамском квартале всё более масштабно.
+				</p>
+				<div class="image">
+					<img src="images/Kvartal.jpg">
+				</div>
+			</div>
+			<div class="forma">
+				<form>
+					<label>
+						<span class="form-content">Имя</span><br><input type="text" name="first-name" class="text-name"><br>
+					</label>
+					<label>
+						<span class="form-content">Комментарий</span><br><textarea name="comment" class="text-comment"></textarea>
+					</label>
+					<div class="form-block">
+						<label>
+							<span class="form-content">Анонимно</span><input type="checkbox" name="anonymously" class="boxing">
+						</label>
+					</div>
+					<div class="form-block">
+						<label>
+							<input type="submit" value="Отправить" class="send">
+						</label>
+					</div>
+					<input type="hidden" name="hidden-value">
+				</form>
+			</div>
+		</div>
+	<footer>
+		<a href="/">
+			<img src="images/logo-1.png" class="cat-footer">
+		</a>
+		<ul class="footer-navigation">
+			<li class="li-list">E-mail: art@gmail.com</li>
+			<li class="li-list">Tel: +380 566 25 25</li>
+			<li class="li-list">VK: ArtTerritory</li>
+		</ul>
+	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

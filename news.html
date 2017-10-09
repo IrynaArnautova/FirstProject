@@ -2,27 +2,62 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Новости</title>
-<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div>
-		text
-	</div>
-	<form>
-		<label>
-			Комментарий<textarea name="comment"></textarea>
-		</label><br>
-		<label>
-			Имя<input type="text" name="first-name">
-		</label>
-		<label>
-			Анонимно<input type="checkbox" name="anonymously">
-		</label>
-		<label>
-			Отправить<input type="submit" value="Отправить">
-		</label>
-		<input type="hidden" name="hidden-value" value="news">
-	</form>
+	<nav>
+		<a href="#">
+			<img src="images/logo-3.png" class="cat" alt="logo-cat">
+		</a>
+	</nav>
+		<div class="main">
+			<div id="news">
+				<div class="author">Таисия Федосеева</div>
+				<div class="date">20.09.2017</div>
+				<p>	
+					Наши синхронистки востребованы на Востоке: в Корее, Китае, Малайзии, Камбодже. Мне работу предложила знакомая тренер. Я полетела в Китай вместе с еще двумя девочками из Киева. Всеми нюансами и документами занимаются менеджеры в Украине и Китае. От нас требуется только работать.
+					У нас было по семь шоу в день: четыре выступления в дельфинарии и три — в аквариуме. В дельфинарии мы показывали номера из синхронного плаванья. А в аквариуме переодевались в костюмы русалок и выступали в большом бассейне. Набирали воздух и ныряли туда-сюда, махали людям. Глубина бассейна — семь метров.
+					Вместе с нами в бассейне плавали рыбы и черепахи. Рыбы за два месяца к тебе привыкают, а с черепахами плавать страшно. Бывает такое, что ты делаешь под водой какую-то фигуру, а тут перед твоим лицом черепаха хватает рыбу и разрывает её на части. Одну девочку черепаха схватила за волосы, другую — цапнула за ногу. Это неприятно.
+					Практически никто из китайцев не знает английского. Мы жили в провинции, и говорят, что в Пекине дела обстоят лучше. Мне встретился только один мужчина, неплохо говорящий по-английски. Он помог объясниться с продавщицей, которая хотела нас обмануть.
+				</p>
+				<div class="image">
+					<img src="images/Rusalka.jpg">
+				</div>
+			</div>
+			<div class="forma">
+				<form>
+					<label>
+						<span class="form-content">Имя</span><br><input type="text" name="first-name" class="text-name"><br>
+					</label>
+					<label>
+						<span class="form-content">Комментарий</span><br><textarea name="comment" class="text-comment"></textarea>
+					</label>
+					<div class="form-block">
+						<label>
+							<span class="form-content">Анонимно</span><input type="checkbox" name="anonymously" class="boxing">
+						</label>
+					</div>
+					<div class="form-block">
+						<label>
+							<input type="submit" value="Отправить" class="send">
+						</label>
+					</div>
+					<input type="hidden" name="hidden-value">
+				</form>
+			</div>
+		</div>
+	<footer>
+		<a href="/">
+			<img src="images/logo-1.png" class="cat-footer">
+		</a>
+		<ul class="footer-navigation">
+			<li class="li-list">E-mail: art@gmail.com</li>
+			<li class="li-list">Tel: +380 566 25 25</li>
+			<li class="li-list">VK: ArtTerritory</li>
+		</ul>
+	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

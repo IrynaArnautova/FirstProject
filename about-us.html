@@ -2,27 +2,62 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>О нас</title>
-<link rel="stylesheet" href="css/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Text</title>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<div>
-		text
-	</div>
-	<form>
-		<label>
-			Комментарий<textarea name="comment"></textarea>
-		</label><br>
-		<label>
-			Имя<input type="text" name="first-name">
-		</label>
-		<label>
-			Анонимно<input type="checkbox" name="anonymously">
-		</label>
-		<label>
-			Отправить<input type="submit" value="Отправить">
-		</label>
-		<input type="hidden" name="hidden-value" value="about-us">
-	</form>
+	<nav>
+		<a href="#">
+			<img src="images/logo-3.png" class="cat" alt="logo-cat">
+		</a>
+	</nav>
+		<div class="main">
+			<div id="about-us">
+				<div class="author">Таисия Федосеева</div>
+				<div class="date">03.03.2017</div>
+				<p>
+					Как объездить полтора десятка стран на мотоцикле, потратив минимум денег и получив максимум впечатлений, рассказали Вадим Богданович и Инна Григоращенко.
+					«Я профессиональный велосипедист и меня всегда очень привлекали двухколесные транспортные средства, — рассказывает Вадим. — Купить мотоцикл – это давняя мечта, которую я не мог реализовать из-за страхов моей мамы, она была категорически против. Но я встретил Инну, она меня вдохновила, и в 2013 году я втайне от мамы купил себе мотоцикл. За две недели обучился на нем ездить и уже через месяц после покупки мы поехали на этом мотоцикле в Черногорию. Сейчас я понимаю, насколько это была рискованная идея – поехать в другую страну на китайском мотоцикле, который мои друзья обзывали мопедом. Я, кстати, не мог понять, почему: после велосипеда мне мой байк казался просто огромным».
+					Во время путешествия Вадим и Инна хотят быть максимально независимы, в том числе и от места привала, поэтому ими и был выбран мотоцикл. С ним есть возможность стать на ночевку там, где хочется – в лесу, поле или на берегу реки. Такое путешествие позволяет экономить достаточно средств: по словам Вадима, месячный тур вокруг Черного моря обошелся паре в 1500 долларов, с учетом нескольких ночевок в гостинице и одной остановки в специально оборудованном кемпинге.
+					За все время — с 2013 по 2016 годы — Вадим и Инна побывали в Болгарии, Молдове, Армении, Румынии, Сербии, Албании, Черногории, Греции, Грузии, России, Беларуси, Швеции, Норвегии, Дании, Финляндии, Польше, Турции.
+				</p>
+				<div class="image">
+					<img src="images/Bake.jpg">
+				</div>
+			</div>
+			<div class="forma">
+				<form>
+					<label>
+						<span class="form-content">Имя</span><br><input type="text" name="first-name" class="text-name"><br>
+					</label>
+					<label>
+						<span class="form-content">Комментарий</span><br><textarea name="comment" class="text-comment"></textarea>
+					</label>
+					<div class="form-block">
+						<label>
+							<span class="form-content">Анонимно</span><input type="checkbox" name="anonymously" class="boxing">
+						</label>
+					</div>
+					<div class="form-block">
+						<label>
+							<input type="submit" value="Отправить" class="send">
+						</label>
+					</div>
+					<input type="hidden" name="hidden-value">
+				</form>
+			</div>
+		</div>
+	<footer>
+		<a href="/">
+			<img src="images/logo-1.png" class="cat-footer">
+		</a>
+		<ul class="footer-navigation">
+			<li class="li-list">E-mail: art@gmail.com</li>
+			<li class="li-list">Tel: +380 566 25 25</li>
+			<li class="li-list">VK: ArtTerritory</li>
+		</ul>
+	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>

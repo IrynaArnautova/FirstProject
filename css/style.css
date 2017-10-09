@@ -1,12 +1,202 @@
+@import url('https://fonts.googleapis.com/css?family=El+Messiri:400,600,700&subset=cyrillic');
+
 body{
+	min-width: 320px;
 	max-width: 740px;
 	margin: auto;
 }
 
-.navigation li{
-	display: inline;
+.cat{
+	width: 140px;
+	height: 120px;
 }
 
+.cat-footer{
+	width: 140px;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+
+.navigation{
+	align-self: center;
+}
+
+nav{
+	background: #98FB98;
+	display: flex;
+	width: 100%;
+	border: 0.1px solid;
+	justify-content: space-around;
+}
+
+a:hover{
+	color: #FF4500;
+}
+
+a:active{
+	color: #8B0000;
+}
+
+a:visited{
+	color: #006400;
+}
+
+.main > div{
+	border: 1px solid;
+	padding: 10px;
+}
+
+.li-list{
+	display: inline;
+    margin-right: 15px; /* создание отступов для того, чтобы не сливались пункты меню. */
+    font-family: 'El Messiri'; /* Указание типа шрифта. */
+    font-style: italic;
+    font-size: 14px; /* Размер текста в ссылках. */
+    border: 1px solid lightblue;
+    border-radius: 4px;
+    padding: 4px;
+    background: lightcyan;
+}
+	
 img{
 	max-width: 100%;
 }
+
+.image{
+	text-align: center;
+}
+
+.image img{
+	max-width: 300px;
+}
+
+#news{
+	background: #E0FFFF;
+}
+
+#interview{
+	background: #87CEEB;
+}
+
+#infographic{
+	background: #6495ED;
+}
+
+#today{
+	background: #FFDEAD;
+}
+
+#about-us{
+	background: #98FB98;
+}
+
+.author{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.date{
+	font-size: 10px;
+}
+
+.forma{
+	background: #D8BFD8;
+}
+
+form label{
+	max-width: 100%;
+	margin: 10px 0;
+    display: block;
+}
+
+.form-content{
+	font-size: 18px;
+	font-family: 'El Messiri';
+}
+
+.text-comment{
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 4px;
+}
+
+.text-name{
+	width: 100%;
+	box-sizing: border-box;
+	padding: 4px;
+	border-radius: 4px;
+}
+
+.choice{
+	width: 100%;
+	padding: 4px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	font-size: 18px;
+	font-family: 'El Messiri';
+}
+
+.boxing{
+	width: 17px;
+    height: 17px;
+}
+
+.send{
+	width: 100%;
+	box-sizing: border-box;
+	border-radius: 4px;
+	background: lightblue;
+	padding: 4px;
+	font-family: 'El Messiri';
+	font-size: 18px;
+}
+
+.forma form{
+	margin: 0 0 20px;
+}
+
+footer{
+	background: #008080;
+	display: flex;
+	width: 100%;
+	border: 0.1px solid;
+	justify-content: space-around;
+}
+
+.footer-navigation{
+	align-self: center;
+	font-weight: bold;
+}
+
+@media screen and (max-width: 664px) {
+	.navigation li, .footer-navigation li{
+		display: block;
+		margin: 5px 0;
+	}
+
+	footer{
+		padding: 5px;
+		box-sizing: border-box;
+	}
+
+	.cat{
+		margin-top: 40px;
+	}
+
+}
+
+@media screen and (min-width: 741px) {
+	.send{
+		width: 100px;
+		float: right;
+		margin: -40px 0;
+		border-radius: 4px;
+		padding: 0.5px;
+	}
+}
+
+
+
+
