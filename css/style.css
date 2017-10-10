@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=El+Messiri:400,600,700&subset=cyrillic');
 
 body{
-	min-width: 320px;
-	max-width: 740px;
 	margin: auto;
+	max-width: 740px;
+	min-width: 320px;
 }
 
 .cat{
-	width: 140px;
 	height: 120px;
+	width: 140px;
 }
 
 .cat-footer{
@@ -25,10 +25,10 @@ body{
 
 nav{
 	background: #98FB98;
-	display: flex;
-	width: 100%;
 	border: 0.1px solid;
 	justify-content: space-around;
+	display: flex;
+	width: 100%;
 }
 
 a:hover{
@@ -49,15 +49,15 @@ a:visited{
 }
 
 .li-list{
-	display: inline;
-    margin-right: 15px; /* создание отступов для того, чтобы не сливались пункты меню. */
-    font-family: 'El Messiri'; /* Указание типа шрифта. */
-    font-style: italic;
-    font-size: 14px; /* Размер текста в ссылках. */
-    border: 1px solid lightblue;
+	background: lightcyan;
+	border: 1px solid lightblue;
     border-radius: 4px;
+	display: inline;
+    font-family: 'El Messiri'; 
+    font-style: italic;
+    font-size: 14px; 
+    margin-right: 15px; 
     padding: 4px;
-    background: lightcyan;
 }
 	
 img{
@@ -117,40 +117,40 @@ form label{
 }
 
 .text-comment{
-	width: 100%;
 	box-sizing: border-box;
 	border-radius: 4px;
+	width: 100%;
 }
 
 .text-name{
-	width: 100%;
+	border-radius: 4px;
 	box-sizing: border-box;
 	padding: 4px;
-	border-radius: 4px;
+	width: 100%;
 }
 
 .choice{
-	width: 100%;
-	padding: 4px;
 	box-sizing: border-box;
 	border-radius: 4px;
 	font-size: 18px;
 	font-family: 'El Messiri';
+	padding: 4px;
+	width: 100%;
 }
 
 .boxing{
-	width: 17px;
     height: 17px;
+    width: 17px;
 }
 
 .send{
-	width: 100%;
+	background: lightblue;
 	box-sizing: border-box;
 	border-radius: 4px;
-	background: lightblue;
-	padding: 4px;
 	font-family: 'El Messiri';
 	font-size: 18px;
+	padding: 4px;
+	width: 100%;
 }
 
 .forma form{
@@ -159,10 +159,10 @@ form label{
 
 footer{
 	background: #008080;
-	display: flex;
-	width: 100%;
 	border: 0.1px solid;
+	display: flex;
 	justify-content: space-around;
+	width: 100%;
 }
 
 .footer-navigation{
@@ -177,8 +177,8 @@ footer{
 	}
 
 	footer{
-		padding: 5px;
 		box-sizing: border-box;
+		padding: 5px;
 	}
 
 	.cat{
@@ -189,14 +189,10 @@ footer{
 
 @media screen and (min-width: 741px) {
 	.send{
-		width: 100px;
+		border-radius: 4px;
 		float: right;
 		margin: -40px 0;
-		border-radius: 4px;
 		padding: 0.5px;
+		width: 100px;	
 	}
 }
-
-
-
-
